@@ -1,2 +1,14 @@
 13/Mar/2021:23:45:19 190 [Calculator.java] [INFO] calculator.Calculator Adding 5.0 6.0
 13/Mar/2021:23:47:06 164 [Calculator.java] [INFO] calculator.Calculator Adding 8.0 9.0
+17/Mar/2021:11:58:58 037 [Calculator.java] [INFO] calculator.Calculator [SQUARE ROOT] - 4.0
+17/Mar/2021:11:58:58 043 [Calculator.java] [INFO] calculator.Calculator [RESULT - SQUARE ROOT] - 2.0
+17/Mar/2021:12:00:17 946 [Calculator.java] [INFO] calculator.Calculator [SQUARE ROOT] - 4.0
+17/Mar/2021:12:00:17 954 [Calculator.java] [INFO] calculator.Calculator [RESULT - SQUARE ROOT] - 2.0
+17/Mar/2021:12:00:22 447 [Calculator.java] [INFO] calculator.Calculator [FACTORIAL] - 3.0
+17/Mar/2021:12:00:22 448 [Calculator.java] [INFO] calculator.Calculator [RESULT - FACTORIAL] - 6
+17/Mar/2021:12:00:29 227 [Calculator.java] [INFO] calculator.Calculator [LOG] - 10.0
+17/Mar/2021:12:00:29 228 [Calculator.java] [INFO] calculator.Calculator [RESULT - LOG] - 2.302585092994046
+17/Mar/2021:12:00:36 703 [Calculator.java] [INFO] calculator.Calculator [POWER] - 2.0,3.0
+17/Mar/2021:12:00:36 704 [Calculator.java] [INFO] calculator.Calculator [RESULT - POWER] - 8.0
+17/Mar/2021:12:27:33 971 [Calculator.java] [INFO] calculator.Calculator [LOG] - 10.0
+17/Mar/2021:12:27:33 977 [Calculator.java] [INFO] calculator.Calculator [RESULT - LOG] - 2.302585092994046

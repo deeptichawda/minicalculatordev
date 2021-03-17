@@ -14,7 +14,7 @@ public class Calculator {
         Scanner scan = new Scanner(System.in);
         System.out.println("Calculator");
         do {
-            System.out.println("1 for Addition\n2 for Subtraction\n3 for Multiplication\n4 for Division\n");
+            System.out.println("1 for Square Root\n2 for Factorial\n3 for Logarithm\n4 for Power\n");
             System.out.print("Enter your choice: ");
             choice = scan.nextInt();
             if (choice > 4 || choice <1) {
@@ -22,20 +22,31 @@ public class Calculator {
                 System.out.println("Invalid choice, exiting\n");
             }
             else if (flag != 1){
-                System.out.println("Enter two numbers");
-                System.out.print("Enter number 1: ");
-                num1 = scan.nextDouble();
-                System.out.print("Enter number 2: ");
-                num2 = scan.nextDouble();
+
+
 
                 switch(choice) {
-                    case 1: System.out.println(num1+" + "+num2+" = "+Add(num1, num2));
+                    case 1: System.out.println("Enter number");
+
+                        num1 = scan.nextDouble();
+                        System.out.println("Square Root of "+num1+":" +squareroot(num1));
                         break;
-                    case 2: System.out.println(num1+" - "+num2+" = "+Subtract(num1, num2));
+                    case 2: System.out.println("Enter number");
+
+                        num1 = scan.nextDouble();
+                        System.out.println("Factorial of"+num1+":" +factorial(num1));
                         break;
-                    case 3: System.out.println(num1+" * "+num2+" = "+Multiply(num1, num2));
+                    case 3: System.out.println("Enter number");
+
+                        num1 = scan.nextDouble();
+                        System.out.println("Logarithm of "+num1+":"+log(num1));
                         break;
-                    case 4: System.out.println(num1+" / "+num2+" = "+Divide(num1, num2));
+                    case 4: System.out.println("Enter two numbers");
+                        System.out.print("Enter number 1: ");
+                        num1 = scan.nextDouble();
+                        System.out.print("Enter number 2: ");
+                        num2 = scan.nextDouble();
+                        System.out.println("Power of "+num1 +":"+power(num1,num2));
                         break;
                     default: System.out.println("Exiting, Bye");
                         flag=1;
@@ -45,24 +56,39 @@ public class Calculator {
         }while(flag==0);
     }
 
-    static double Add(double a, double b) {
-        logger.info("Adding "+a+" "+b);
+    public static double squareroot(double number1) {
+        logger.info("[SQUARE ROOT] - " + number1);
+        double result = Math.sqrt(number1);
+        logger.info("[RESULT - SQUARE ROOT] - " + result);
+        return result;
+    }
 
-        return a + b;
-    }
-    static double Subtract(double a, double b) {
-        logger.info("Subtracting "+a+" "+b);
-        return a - b;
-    }
-    static double Multiply(double a, double b) {
-        logger.info("Multiplying "+a+" "+b);
-        return a * b;
-    }
-    static double Divide(double a, double b) {
-        logger.info("Dividing "+a+" "+b);
-        if (b == 0) {
-            throw new IllegalArgumentException("Divisor cannot be zero, Exiting");
+    public static int factorial(double number1) {
+        logger.info("[FACTORIAL] - " + number1);
+        int result = 1;
+        if(number1 == 1)
+            return 1;
+        for(int i=2; i<=number1; i++){
+            result*=i;
         }
-        else return a / b;
+        logger.info("[RESULT - FACTORIAL] - " + result);
+        return result;
     }
+
+
+    public static double log(double number1) {
+        logger.info("[LOG] - " + number1);
+        double result = Math.log(number1);
+        logger.info("[RESULT - LOG] - " + result);
+        return result;
+    }
+
+    public static double power(double number1, double number2) {
+        logger.info("[POWER] - " + number1 +","+number2);
+        double result = Math.pow(number1,number2);
+        logger.info("[RESULT - POWER] - " + result);
+        return result;
+    }
+
+
 }
