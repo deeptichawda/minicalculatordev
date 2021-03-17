@@ -12,3 +12,5 @@
 17/Mar/2021:12:00:36 704 [Calculator.java] [INFO] calculator.Calculator [RESULT - POWER] - 8.0
 17/Mar/2021:12:27:33 971 [Calculator.java] [INFO] calculator.Calculator [LOG] - 10.0
 17/Mar/2021:12:27:33 977 [Calculator.java] [INFO] calculator.Calculator [RESULT - LOG] - 2.302585092994046
+17/Mar/2021:12:33:00 485 [Calculator.java] [INFO] calculator.Calculator [LOG] - 10.0
+17/Mar/2021:12:33:00 491 [Calculator.java] [INFO] calculator.Calculator [RESULT - LOG] - 2.302585092994046

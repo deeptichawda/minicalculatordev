@@ -35,7 +35,7 @@ public class CalculatorTest {
     public void testLogarithm()
     {
         double x=10.0;
-        double expectedResult=2.3025;
+        double expectedResult=2.302585092994046;
         double result=calculator.log(x);
         Assert.assertEquals(expectedResult, result, 0);
 
